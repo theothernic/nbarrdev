@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,300;1,9..40,500;1,9..40,700;1,9..40,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&display=swap');
+
+html, body { padding: 0; margin: 0; height: 100vh; width: 100vw;}
+h1, h2, h3, h4, h5, h6 { padding: 0; margin: 0; }
+
+
+body {
+    background: url('../img/bg.gif') no-repeat center;
+    background-size: cover;
+
+    color: #ffe5b4;
+}
+
+a {
+    color: #668ac7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline #fba000;
+}
+
+
+main {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+
+.bluestage {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 4rem;
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    /*background: #113c80;*/
+    background: #0e3055;
+}
+
+.bluestage header,
+.bluestage footer  { flex-shrink: 1;}
+
+
+.bluestage .body
+{
+    flex: 2;
+    flex-grow: 1;
+
+    margin-top: 3rem;
+
+    display: flex;
+
+
+    font-family: 'Source Serif 4', serif;
+
+}
+
+.bluestage .body h3 { color: #739efc;}
+
+.bluestage .body .col { flex: 1; }
+
+.bluestage .title {
+    font: 900 2.6rem 'DM Sans', sans-serif;
+    color: #fff;
+}
+.bluestage .tagline {
+    font: 400 normal 1.8rem 'Fraunces', serif;
+    color: #fda400;
+}
+
+
+.bluestage section {
+    margin: 1rem;
+}
+
+
+.bluestage ul.summary li {
+    margin: 1rem;
+}
+.bluestage ul.summary em {
+    font: 300 normal 1rem 'DM Sans', sans-serif;
+    color: darkorange;
+}
+
+.bluestage ul.horizontal {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.bluestage ul.horizontal li {
+    margin: 0 0.2rem;
+}
+
+.bluestage ul.horizontal li a:hover {
+    color: #fda400;
+}
+
+.bluestage ul.links li .la,
+.bluestage ul.links li .las,
+.bluestage ul.links li .lab
+{ font-size: 2rem; }
+
+.copyleft {
+    padding: 1rem;
+
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .bluestage { width: auto; margin: 1rem; }
+
+    .bluestage header { padding: 1rem;}
+
+    .bluestage .body { margin: inherit;}
+
+    .bluestage ul.summary {
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+}
